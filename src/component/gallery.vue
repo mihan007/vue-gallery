@@ -14,7 +14,7 @@
       <slot name="next">›</slot>
     </a>
     <a v-if="!carousel" class="close">
-      <slot name="close">X</slot>
+      <slot name="close">×</slot>
     </a>
     <ol v-if="!carousel" class="indicator"></ol>
     <a v-if="carousel" class="play-pause"></a>
@@ -143,9 +143,11 @@
   .blueimp-gallery > .description {
     position: absolute;
     top: 30px;
-    left: 15px;
+    text-align: center;
     color: #fff;
     display: none;
+    width: 100%;
+    font-size: 20pt;
   }
   .blueimp-gallery-controls > .description {
     display: block;
