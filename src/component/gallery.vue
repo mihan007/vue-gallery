@@ -148,7 +148,7 @@
     display: none;
     width: 100%;
     font-size: 20pt;
-    text-shadow: 1px 1px 1em black;
+    text-shadow: 0px 0px 1em black;
   }
   .blueimp-gallery-controls > .description {
     display: block;
