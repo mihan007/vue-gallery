@@ -128,7 +128,7 @@
         const image = this.images[index];
         if (image !== undefined) {
           const text = image.description;
-          const node = this.instance.container.find('.description');
+          const node = this.instance.container.find('.description span');
           if (text) {
             node.empty();
             node[0].appendChild(document.createTextNode(text));
@@ -148,9 +148,14 @@
     display: none;
     width: 100%;
     font-size: 20pt;
-    text-shadow: 0px 0px 1em black;
   }
   .blueimp-gallery-controls > .description {
     display: block;
+  }
+  .description > span {
+    background: black;
+    opacity: 0.7;
+    padding: 10px;
+    border-radius: 20px;
   }
 </style>
